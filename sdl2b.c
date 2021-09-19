@@ -239,10 +239,6 @@ void update_player(player *tha_playa, mouse *tha_mouse) {
     tha_playa->x += (int)PLAYER_MAX_SPEED;	
   }
 
-
-
-
-
   // Make Sure It Slowly Walks Off (Y version) //
   if (tha_playa->speed_y <= 0) {
     moveY = 0;
@@ -257,7 +253,7 @@ void update_player(player *tha_playa, mouse *tha_mouse) {
 
     if (moveY == 1) {
       // Step 3: Set It To y Of Blorp 			//
-      tha_playa->x = tha_playa->x - (int)currentSpeed;
+      tha_playa->y = tha_playa->y - (int)currentSpeed;
     } else if (moveY == 2) {
       tha_playa->y = tha_playa->y + (int)currentSpeed;
     }
